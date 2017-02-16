@@ -1,0 +1,43 @@
+
+table{
+	border-spacing: 20px;
+	margin: 20px auto;
+}
+table a{
+	display: block;
+	border-radius: 20px;
+	padding: 5px 45px;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #3CB371;
+	color: white;
+}
+
+table a:hover {
+	border:2px solid #00FA9A;
+	background-color:white;	
+	color: #3CB371;
+
+}
+form{
+	font-size: 150%;
+	font-weight: bold;
+	color: #3CB371;
+}
+input{
+	height: 20px;
+	width: 150px;
+	font-size:70%;
+}
+#login{
+	margin: 10px auto auto auto;
+}
+.center{
+	text-align: center;
+}
+#logo{
+	height: 10%;
+	width: 10%;
+	margin: 50px auto 25px auto;
+}
+

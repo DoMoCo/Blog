@@ -1,0 +1,30 @@
+/*关于我页面长度*/
+content{
+	height: 700px;
+}
+#about{
+	border-radius: 10px 10px 0px 0px;
+	color: #3CB371;
+	background-color: white;
+}
+/*添加字体样式*/
+#page{
+	font-weight: bold;
+	font-size: 120%;
+}
+/*修改内边距、分割线宽度*/
+#page>div{
+	padding: 10px 0px 30px 0px;
+	border-bottom: 2px dashed #6495ED;
+}
+#content_start{
+	color:red;
+}
+#page span{
+	font-weight:normal;
+}
+#particular{
+	font-weight:normal;
+	margin-left: 50px;
+	color:#909090;
+}
