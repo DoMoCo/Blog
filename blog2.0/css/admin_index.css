@@ -1,0 +1,29 @@
+#user{
+	margin: 25px 100px 20px 10px;
+	float: right;
+}
+#user a{
+	padding: 10px 10px;
+	display: block;
+	text-decoration: none;
+	font-size: 120%;
+	border-bottom:1px solid white;
+	background-color: #3CB371;
+	color: white;		
+} 
+#user a:hover{
+	border:1px solid #00FA9A;
+	color:#00FA9A; 
+	border-color: #00FA9A;
+	border-style: solid;
+	border-top: 5px solid grey;
+	background-color: rgb(255,255,255)
+}
+#all{
+	border-radius: 10px 10px 0px 0px;
+	color: #3CB371;
+	background-color: white;
+}
+#last{
+	border-bottom:none;
+}

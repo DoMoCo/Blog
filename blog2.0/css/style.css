@@ -1,0 +1,132 @@
+body{
+	margin: 0px;
+}
+header{
+	background-image: url(../img/sky.jpg);
+	background-position: center;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	margin-top: -100px;
+	border-bottom: 3px solid white;
+	box-shadow: 0 1px 5px grey;
+	z-index: 1;
+}
+#logo{
+	width: 167px;
+	height: 127px;
+	float:left;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+header table{
+	border-spacing: 30px 0px;
+	font-size: 120%;
+}
+header table td{
+	padding-top: 80px;		
+}
+header table a{
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 1px 3px white,1px 0 3px white;
+	padding: 10px 10px 0px 10px;
+	font-weight: bold;
+}
+header table a:hover{
+	/*border-bottom: 3px solid #191970;*/
+	color: #3CB371;
+}
+sup{
+	color:red;
+	font-size: 60%;
+	border-radius: 10px;
+	border:1px white solid;
+	padding: 2px;
+}
+#sign_in a,#sign_up a{
+	padding: 10px 10px;
+	float: right;
+	display: block;
+	text-decoration: none;
+	font-size: 120%;
+}
+#sign_in a{
+	margin: 25px 100px 20px 10px;
+	border:1px solid #3CB371;
+	background-color: #3CB371;
+	color: white;
+		
+} 
+#sign_up a{
+	margin: 25px 10px 20px 10px;
+	border:1px solid #3CB371;	
+	background-color: rgba(255,255,255,0.6);	
+    color:#3CB371;
+}
+#sign_in a:hover{
+	background: #00FA9A;
+	border-color: #00FA9A;
+}
+#sign_up a:hover{
+	background-color: rgba(255,255,255,1);
+}
+content{
+	width: 100%;
+	background-color: white;
+	display: table;
+	margin-top: 100px;
+}
+
+#page{
+	display: table-cell;
+	width: 70%;
+	/*border-right: 6px solid #6495ED;*/
+	border-bottom: 3px solid #3CB371;
+}
+#page>div{
+	width: 80%;
+	margin-left: 100px;
+	margin-bottom: 50px;
+	padding: 20px 0;
+	border-bottom: 1px dashed #6495ED;
+}
+#page h1,#sidebar h2{
+	border-left: 5px solid #6495ED;
+	background-color: rgb(245,245,245);
+	padding-left: 10px;
+}
+#page h1{
+	margin-bottom: 50px;
+}
+#content_start{
+	margin-top:50px;
+}
+#sidebar{
+	display:table-cell;
+	width: 30%;
+}
+fieldset{
+	position: fixed;
+	top:130px;
+	margin:0px 10px 0px 10px;
+	border:2px solid #3CB371;
+	border-radius: 20px;
+	height: 450px;
+	width: 320px;
+}
+legend{
+    font-size: 120%;
+    font-weight: bold;
+    color: #3CB371;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+footer>p{
+	color:#A0A0A0;
+	width: 70%;
+	margin-top: 30px;
+}
