@@ -1,0 +1,49 @@
+/*关于我页面长度*/
+content{
+	height: auto;
+}
+@media screen and (min-width: 1200px)
+{
+	#about{
+		color: #3CB371;
+		border-radius: 10px 10px 0px 0px;
+		background-color: white;
+	}
+}
+@media screen and (max-width: 1199px)
+{
+	#about{
+		color: #3CB371;
+		border-radius: none;
+		background: transparent;
+	}
+}
+
+/*添加字体样式*/
+#page{
+	font-size: 120%;
+}
+/*修改内边距、分割线宽度*/
+#page>div{
+	width: 85%;
+	padding-left: 50px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+#page p{
+	color: rgb(150,150,150);
+	padding-left: 30px;
+}
+#page #decript{
+	padding-left: 0px;
+	margin-bottom: 50px;
+	color:red;
+	font-weight: bold;
+}
+#page span{
+	font-weight:normal;
+	color: #6495ED;
+}
+#page>div>div{
+	height: auto;
+}

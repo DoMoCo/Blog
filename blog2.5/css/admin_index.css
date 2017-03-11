@@ -1,0 +1,68 @@
+#user{
+	float: right;
+	margin: 25px 100px 20px 10px;
+}
+@media screen and (max-width: 1199px)
+{
+	#user{
+		margin: 25px 50px 20px 10px;
+	}
+}
+#user a{
+	display: block;
+	padding: 10px 10px;
+	color: white;
+	font-size: 120%;
+	text-decoration: none;
+	background-color:deepskyblue;
+	box-shadow: -1px 0px 5px gray;
+	box-shadow: 0px -1px 5px gray;		
+} 
+#user a:hover{
+	color:#6495ED; 
+	border:1px solid #00FA9A;
+	border-top: 5px solid #FACC00;
+	background-color: rgb(255,255,255);
+}
+@media screen and (min-width: 1200px)
+{
+	#blog{
+		color: #3CB371;
+		background-color: white;
+		border-radius: 10px 10px 0px 0px;
+	}
+}
+@media screen and (max-width: 1199px)
+{
+	#user a{
+		font-size: 180%;
+	}
+	#blog{
+		color: #3CB371;
+		background: transparent;
+		border-radius: none;
+	}
+}
+/*删除成功*/
+#message{
+	position: fixed;
+	top:120px;
+	left: 350px;
+	z-index: 1;
+	width: 170px;
+	padding: 5px 50px 5px 20px;
+	font-size: 120%;
+	font-weight: normal;
+	background-color: rgb(240,240,250);
+	border-left: 5px solid red;
+}
+@media screen and (max-width: 1199px)
+{
+	#user{
+		margin: 25px 50px 20px 10px;
+	}
+	#message{
+		top: 150px;
+		left: 380px;
+	}
+}

@@ -1,0 +1,87 @@
+.header{
+	position: fixed;
+	background-color: #32CD32;
+	color: white;
+	text-align: center;
+	width: 1280px;
+	top: 0px;
+	left: 0px;
+	height: 75px;
+	margin-bottom: 10px;
+	z-index: 1
+}
+table{
+	border:12px solid #32CD32;
+	margin: 85px auto 0px auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+#table th,td{
+	padding: 5px 10px;
+	border:1px solid #32CD32;
+}
+#table th{
+	background-color: #32CD32;
+	font-size: 150%;
+	color: black;
+}
+#table td{
+	background-color: rgba(25,25,25,0.7);
+	font-size: 110%;
+	color: #E1E1E1;
+}	
+
+h1{text-align: center;}
+
+body{
+	background:black url(book.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+#logo a{
+	color: #008000;
+	display: inline;
+}
+table a{
+	text-decoration: none;
+	display:block;
+}
+table a:link{color:#00FF00;}
+table a:visited{color:#757575;}
+table a:hover{color: black;
+	background-color: #32CD32;
+	border-radius: 6px;
+}
+#particular{display: inline;}
+.slogan{/*标语*/
+	position: fixed; color:black;
+    padding: 10px;font-size: 120%;font-weight: bold;
+ 	border-radius: 25px;
+ 	background-color: rgba(32,192,32,0.8);
+}
+@media screen and (max-width: 1199px)
+{
+	.slogan{
+		display: none;
+	}
+	table{
+		font-size: 200%;
+	}
+}
+.decorate{position: fixed;border-left: 2px solid #008000;}
+@media screen and (max-width: 1199px)
+{
+	.slogan{
+		display: none;
+	}
+	.decorate{
+		display: none;
+	}
+	table{
+		font-size: 250%;
+	}
+}
+#logo{
+	text-shadow: -1px 0px 1px #B2B2B2, 
+	0px -2px 4px #008000;
+	color: #008000;
+}

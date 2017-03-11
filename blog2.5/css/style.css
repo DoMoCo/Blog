@@ -1,0 +1,305 @@
+body{
+	margin: 0px;
+	overflow-y:scroll;
+}
+
+/**
+	头部
+*/
+header{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100px;
+	margin-top: -100px;
+	background-image: url(../img/sky.jpg);/*url()有()不再加引号*/
+	/*bacground-color 和box-show不兼容
+	background-color:#6495ED;防止载入图片滞后透明*/
+	background-position: center;
+	border-bottom: 3px solid white;
+	box-shadow: 0px 1px 5px grey;
+}
+#logo{
+	float:left;
+	width: 167px;
+	height: 127px;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+header nav{
+	width: 800px;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 120%;
+	}
+header nav a{
+	display: inline-block;
+	padding: 10px 10px 0px 10px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	text-shadow: 0px 1px 3px white,1px 0px 3px white;
+}
+header nav a:hover{
+	color: #3CB371;
+}
+sup{
+	padding: 2px;
+	color:red;
+	font-size: 60%;
+	border:1px white solid;
+	border-radius: 10px;
+}
+#sign_in a,#sign_up a{
+	display: inline-block;
+	float: right;
+	padding: 10px 10px;
+	font-size: 120%;
+	text-decoration: none;
+}
+#sign_in a{
+	margin: 25px 100px 20px 0px;
+	color: white;
+	background-color: #3CB371;
+	border:1px solid #3CB371;		
+} 
+#sign_up a{
+	margin: 25px 0px 20px 0px;
+    color:#3CB371;
+	border:1px solid #3CB371;	
+	background-color: rgba(255,255,255,0.6);	
+}
+#sign_in a:hover{
+	background: #00FA9A;
+	border-color: #00FA9A;
+}
+#sign_up a:hover{
+	background-color: rgba(255,255,255,1);
+}
+
+/*
+	内容
+*/
+content{
+	display: table;
+	width: 100%;
+	margin-top: 100px;
+	background-color: white;
+}
+#page{
+	display: table-cell;
+	width: 70%;
+	border-bottom: 2px solid #3CB371;
+}
+#sidebar{
+	display: table-cell;
+	width: 30%;
+}
+#page>div{
+	width: 85%;	
+	margin:100px 0px 20px 60px;
+	border-top: 1px solid #6495ED;
+	border-left: 1px solid #6495ED;
+}
+#page div>span{
+	display: inline-block;
+	width: 200px;
+	margin-left: 20px;
+	margin-top: -10px;
+	color: rgb(150,150,150);
+}
+
+#page>div>div{
+	height: 100px;
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+#page a,#sidebar a{
+	display: block;
+	padding: 8px 0px 5px 10px;
+	margin-bottom: 5px;
+	color: #6495ED;
+	text-align: center;
+	font-size: 125%;
+	text-decoration: none;
+	border-left: 5px solid #6495ED;
+	background-color: rgb(245,245,245);
+}
+
+#sidebar a{
+	padding: 5px 0px 0px 0px;
+	margin-top: 10px;
+	width: 300px;
+	font-size: 120%;
+	text-align: left;
+
+	overflow: hidden;/*溢出隐藏并用...代替*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    background-color: transparent;
+	border: none;
+}
+
+#sidebar span{
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 100%;
+	color: rgb(100,100,100);
+}
+
+#page a:hover,#sidebar a:hover{
+	color: #FACC00;
+	border-color: #FACC00;
+}
+#page>div:hover{
+	border-top: 1px solid #FACC00;
+	border-left: 1px solid #FACC00;
+}
+
+/*
+	页面跳转
+*/
+#page #page_link{
+	height: 50px;
+	padding-bottom: 10px;
+	font-size: 100%;
+	border: none;
+}
+#page #page_link span{
+	display: inline-block;
+	width: 80px;
+	margin-left: 0px;/*覆盖父属性*/
+	margin-right: 40px;
+	font-weight: bold;
+	font-size: 430%;
+	color: rgb(150,150,150);
+}
+#page #page_link a{
+	display: inline-block;
+	width: 50px;
+	border:none;
+	background-color: transparent;
+}
+#page #page_link #pagenow{
+	text-decoration: underline;
+}
+#page #page_link a:hover{
+
+	font-size: 300%;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+/*
+	热门文章
+*/
+fieldset{
+		position: fixed;
+		top:130px;
+		width: 300px;
+		margin-left: 10px;
+		border:1px solid #3CB371;
+		border-radius: 10px;
+		background-color: white;/*防止载入样式表滞后透明*/
+}
+legend{
+	    font-size: 150%;
+	    color: #FACC00;
+}
+
+/*
+	页脚
+*/
+footer{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+footer>p{
+	color:#A0A0A0;
+	width: 70%;
+	margin-top: 30px;
+}
+
+/*移动端样式*/
+@media screen and (max-width: 1199px)
+{
+
+	content{
+		font-size: 250%;
+	}
+	header{
+		font-size: 150%;
+	}
+	header nav{
+		margin-top: 10px;
+	}
+	#logo{
+		width:250px; 
+		height:190px;
+		margin-left: 20px;
+		margin-top: -10px;
+	}
+	#sign_in a{
+		margin: 25px 20px 20px 0px;
+  	}
+  	#sign_in a,#sign_up a{
+  		font-size: 150%;
+  	}
+  	#page{
+		display: table-cell;
+		width: 100%;
+	}
+	#sidebar{
+		display: table-row;
+		text-align: center;
+	}
+  	#page div>span{
+		width: 250px;
+		margin-left: 10px;
+  		font-size: 65%;
+	}
+	#page>div{
+		width: 80%;	
+		margin: 200px auto 20px auto;
+	}
+	#page #page_link{
+		margin-bottom: 80px;
+	}
+	#page #page_link span{
+		font-size: 265%;
+		margin-right: 80px;
+
+	}
+	#page #page_link a:hover{
+		font-size: 200%;
+	}
+	#sidebar a{
+		width: 750px;
+	}
+	fieldset{
+		position: static;
+		width: 80%;
+		margin: 100px auto 0px auto;
+		border: none;
+		border-top:1px solid #3CB371;
+		border-bottom:1px solid #3CB371; 
+		background-color: white;
+	}
+	footer{
+		width: 100%;
+		height: 150px;
+		margin-top: 100px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	footer>p{
+		width: 100%;
+		margin-top: 0px;
+		font-size: 250%;
+	}
+}

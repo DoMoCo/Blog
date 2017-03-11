@@ -1,0 +1,16 @@
+@media screen and (min-width: 1200px)
+{
+	#blog{
+		color: #3CB371;
+		border-radius: 10px 10px 0px 0px;
+		background-color: white;
+	}
+}
+@media screen and  (max-width: 1199px)
+{
+	#blog{
+		color: #3CB371;
+		border-radius: none;
+		background: transparent;
+	}
+}
